@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data noupdate="1">
+        <record id="fetch_data_from_splynx_connection" model="edi.connection">
+            <field name="name">fetch.data.from.splynx.connection</field>
+            <field name="type">rest</field>
+            <field
+                name="configuration"
+            ><![CDATA[
+{
+"host": "https://demo.splynx.com/api/2.0",
+"user": "admin",
+"password": "admin"
+}
+    ]]></field>
+        </record>
+    </data>
+
+</odoo>

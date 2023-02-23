@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="splynx_account_journal" model="account.journal">
+        <field name="name">splynx.account.journal</field>
+        <field name="type">sale</field>
+        <field name="code">SPLY</field>
+        <field name="refund_sequence" eval="True"/>
+    </record>
+</odoo>

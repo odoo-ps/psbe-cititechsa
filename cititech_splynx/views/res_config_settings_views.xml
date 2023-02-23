@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="config_integration_cititech" model="ir.ui.view">
+        <field name="name">res.config.settings.integration.cititech</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="10"/>
+        <field name="inherit_id" ref="edi_base.res_config_settings_view_form_edi"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('edi_settings')]" position="inside">
+                <h2>Integrations</h2>
+                <div class="row mt16 o_settings_container" id="edi_setting_container_cititech">
+                    <div class="col-12 col-lg-6 o_setting_box" id="edi_cititech">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">Splynx</span>
+                            <div class="text-muted">
+                                Splynx integration.
+                            </div>
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label
+                                        string="Splynx Account"
+                                        for="splynx_account_id"
+                                        class="col-lg-3 o_form_label"
+                                    />
+                                    <field name="splynx_account_id" required="True"/>
+                                    <div class="text-muted">
+                                        Account used for Splynx invoices
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label
+                                        string="Splynx Payment Journal"
+                                        for="splynx_payment_journal_id"
+                                        class="col-lg-3 o_form_label"
+                                    />
+                                    <field name="splynx_payment_journal_id" required="True"/>
+                                    <div class="text-muted">
+                                        Journal used for Splynx payments
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="get_invoices_from_splynx_integration" model="edi.integration">
+        <field name="name">get.invoices.from.splynx.integration</field>
+        <field name="type">get_invoices_from_splynx_software</field>
+        <field name="integration_flow">in</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="synchronization_content_type">json</field>
+        <field name="synchronization_creation">1</field>
+        <field name="connection_id" ref="fetch_data_from_splynx_connection"/>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="get_credit_notes_from_splynx_integration" model="edi.integration">
+        <field name="name">get.credit.notes.from.splynx.integration</field>
+        <field name="type">get_credit_notes_from_splynx_software</field>
+        <field name="integration_flow">in</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="synchronization_content_type">json</field>
+        <field name="synchronization_creation">1</field>
+        <field name="connection_id" ref="fetch_data_from_splynx_connection"/>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="get_customers_from_splynx_integration" model="edi.integration">
+        <field name="name">get.customers.from.splynx.integration</field>
+        <field name="type">get_customers_from_splynx_software</field>
+        <field name="integration_flow">in</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="synchronization_content_type">json</field>
+        <field name="synchronization_creation">1</field>
+        <field name="connection_id" ref="fetch_data_from_splynx_connection"/>
+        <field name="active" eval="False"/>
+    </record>
+</odoo>

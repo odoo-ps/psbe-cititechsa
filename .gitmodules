@@ -1,0 +1,3 @@
+[submodule "ps-internal-edi"]
+	url = git@github.com:odoo-ps/ps-internal-edi.git
+	path = ps-internal-edi
